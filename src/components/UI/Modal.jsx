@@ -19,7 +19,7 @@ const Modal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(<Backdrop />, portalElement)}
-      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>)}
+      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portalElement)}
     </>
   );
 };
